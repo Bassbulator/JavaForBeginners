@@ -11,5 +11,9 @@ public class Main {
         for (int i = 0; i < array.length; i++) {
             System.out.println(array[i]);
         }
+        int b = array[0] + array[array.length/2];
+        {
+            System.out.println("сумма первого и среднего элемента: " + b);
+        }
     }
 }
