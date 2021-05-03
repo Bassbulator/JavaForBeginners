@@ -7,13 +7,13 @@ public class Task_4 {
         Scanner in = new Scanner(System.in);
         System.out.println("Введите 3 числа: ");
 
-        int x = in.nextInt();
-        int y = in.nextInt();
-        int z = in.nextInt();
-        int avg = (x + y + z);
+        double x = in.nextDouble();
+        double y = in.nextDouble();
+        double z = in.nextDouble();
+        double avg = (x + y + z);
         System.out.println(avg);
 
-        int avg2 = avg / 2;
+        double avg2 = avg / 2;
         if (avg2 > 3) {
             System.out.println("Программа выполнена корректно");
         }
