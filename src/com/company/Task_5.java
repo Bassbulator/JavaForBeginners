@@ -6,24 +6,24 @@ public class Task_5 {
     static Scanner scanner = new Scanner(System.in);
 
     public static void main(String[] args) {
-        int num1 = getInt();
-        int num2 = getInt();
+        double num1 = getDouble();
+        double num2 = getDouble();
         char operation = getOperation();
-        int result = calc(num1,num2,operation);
+        double result = calc(num1,num2,operation);
         System.out.println("Результат операции: "+result);
     }
 
-    public static int getInt(){
+    public static double getDouble(){
         System.out.println("Введите число:");
-        int num;
-        if(scanner.hasNextInt()){
-            num = scanner.nextInt();
+        double num;
+        if(scanner.hasNextDouble()){
+            num = scanner.nextDouble();
         } else {
             System.out.println("Не верно введено число.");
             scanner.next();
-            num = getInt();
+            num = getDouble();
         }
-        return num;
+        return (int) num;
     }
 
     public static char getOperation(){
@@ -39,8 +39,8 @@ public class Task_5 {
         return operation;
     }
 
-    public static int calc(int num1, int num2, char operation){
-        int result;
+    public static double calc(double num1, double num2, char operation){
+        double result;
         switch (operation){
             case '+':
                 result = num1+num2;
